@@ -8,6 +8,6 @@ def turn_count(board)
   count
 end
 
-def current_player(turn)
-  ["X", "O"][turn % 2]
+def current_player(board)
+  ["X", "O"][turn_count(board) % 2]
 end
